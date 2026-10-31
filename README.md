@@ -26,7 +26,7 @@ bun add @astrojs/rss
 bun remove @astrojs/mdx
 ```
 
-## 🚀 Project Structure
+## Project Structure
 Inside of your Astro project, you'll see the following folders and files:
 ```text
 /
@@ -48,8 +48,9 @@ Inside of your Astro project, you'll see the following folders and files:
 * User content goes in `src/content/` as markdown files, and will be generated into complete HTML webpages by Astro, using the pages in `src/pages/`, which themselves use the layout templates in `src/layouts/`.
 * Any static assets, like favicon images, can be placed in the `public/` directory, while assets that should be optimized (fonts, images, etc.) can be placed in `src/assets/`.
 
-## 🧞 Commands
-All commands are run from a terminal at the root of the project:
+## Bun Commands
+All commands are run from the root of the project, from a terminal:
+Use the `--bun` flag (`bun --bun dev`, etc.) to use the Bun runtime itself (much faster than the default Node.js runtime) for all binaries and subprocesses (like Astro, Vite or Next.js) started by that command.
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -60,5 +61,4 @@ All commands are run from a terminal at the root of the project:
 | `bun astro ...`           | Run CLI commands like `astro add`, `astro check` |
 | `bun astro -- --help`     | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-Feel free to check out the [Astro documentation](https://docs.astro.build) or jump into the [Astro Discord server](https://astro.build/chat).
+Check out the [Astro documentation](https://docs.astro.build) or jump into the [Astro Discord server](https://astro.build/chat) for more.

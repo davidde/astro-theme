@@ -3,6 +3,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
+import themeOverrides from './integrations/theme-overrides.mjs';
 
 
 // https://astro.build/config
@@ -10,7 +11,8 @@ export default defineConfig({
   site: 'https://example.com',
   integrations: [
     mdx(),
-    sitemap()
+    sitemap(),
+    themeOverrides(),
   ],
   vite: {
     plugins: [tailwindcss()],

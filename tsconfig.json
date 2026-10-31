@@ -6,13 +6,8 @@
     "strictNullChecks": true,
     "types": ["@types/bun"],
     "paths": {
-      "@assets/*": ["./src/assets/*"],
-      "@components/*": ["./src/components/*"],
-      "@content/*": ["./src/content/*"],
-      "@layouts/*": ["./src/layouts/*"],
-      "@lib/*": ["./src/lib/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@styles/*": ["./src/styles/*"]
+      "@theme/*": ["./src/overrides/*", "./src/*"],
+      "@theme-original/*": ["./src/*"]
     }
   }
 }

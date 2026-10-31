@@ -1,10 +1,10 @@
 ---
 title: 'Blog Page'
 description: 'Blog overview page listing all blog posts.'
-layout: ../layouts/PageLayout.astro
+layout: '@theme/layouts/PageLayout.astro'
 ---
-import CardList from '../components/CardList/index.astro';
-import { getBlogPosts } from '../lib/content';
+import CardList from '@theme/components/CardList';
+import { getBlogPosts } from '@theme/lib/content';
 
 export const posts = await getBlogPosts();
 
