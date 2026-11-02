@@ -3,8 +3,7 @@
   "type": "module",
   "version": "0.1.0",
   "exports": {
-    ".": "./index.mjs",
-    "./schema": "./src/schema.ts"
+    ".": "./index.mjs"
   },
   "files": [
     "index.mjs",
