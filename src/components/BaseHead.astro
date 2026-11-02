@@ -3,7 +3,7 @@
 // all pages through the use of the <BaseHead /> component.
 import '@theme/styles/global.tw.css';
 import type { ImageMetadata } from 'astro';
-import FallbackImage from '../../public/favicon.svg';
+import { SITE_IMAGE } from '@theme/consts';
 import { Font } from 'astro:assets';
 
 
@@ -14,7 +14,7 @@ interface Props {
   image?: string | ImageMetadata;
 }
 
-const { title, description, image = FallbackImage } = Astro.props;
+const { title, description, image = SITE_IMAGE } = Astro.props;
 const imagePath = typeof image === 'string' ? image : image.src;
 const imageURL = new URL(imagePath, Astro.site ?? Astro.url.origin);
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);

@@ -1,0 +1,17 @@
+---
+// Injected as `/blog` by the theme's integration (`index.mjs`).
+// (Injected routes must be `.astro`: Astro treats any other injected file as an endpoint.)
+import PageLayout from '@theme/layouts/PageLayout.astro';
+import CardList from '@theme/components/CardList';
+import { getBlogPosts } from '@theme/lib/content';
+
+const posts = await getBlogPosts();
+---
+
+
+<PageLayout frontmatter={{ title: 'Blog Page', description: 'Blog overview page listing all blog posts.' }}>
+  <section>
+    <h1 class='gradient-text text-[2.6em]'>Latest blog posts</h1>
+    <CardList cards={posts} orientation='responsive' />
+  </section>
+</PageLayout>
